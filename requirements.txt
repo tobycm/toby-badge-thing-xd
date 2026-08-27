@@ -1,7 +1,0 @@
-discord.py
-better-ipc
-fastapi
-uvicorn
-python-dotenv
-aiohttp
-pillow

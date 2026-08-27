@@ -19,6 +19,8 @@ TOKEN = os.getenv("TOKEN")
 if TOKEN is None:
     raise ValueError("No token provided")
 
+os.makedirs("./run", exist_ok=True)
+
 if __name__ == "__main__":
     Process(
         target=uvicorn.run,
