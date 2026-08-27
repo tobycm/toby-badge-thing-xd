@@ -101,7 +101,7 @@ async def make_image(session: ClientSession, data: Data):
             (avatar.width + avatar_spacing + text_spacing),
             (canvas.height // 2 - font_size // 2),
         ),
-        data.name,
+        data.name.rstrip("#0"),
         (150, 152, 157),
         font=font,
     )
